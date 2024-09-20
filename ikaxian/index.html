@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イカギャラクシアンゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- ゲームオーバー時のメッセージ -->
+    <div id="gameOver" class="overlay hidden">
+        <h1>ゲームオーバー</h1>
+        <p>スコア: <span id="finalScore">0</span></p>
+        <button onclick="restartGame()">もう一度プレイ</button>
+    </div>
+
+    <!-- ゲームクリア時のメッセージ -->
+    <div id="gameClear" class="overlay hidden">
+        <h1>クリア！</h1>
+        <p>スコア: <span id="clearScore">0</span></p>
+        <button onclick="restartGame()">もう一度プレイ</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
